@@ -1,0 +1,61 @@
+.delivery-type {
+
+  &::before {
+    flex-shrink: 0;
+    content: "";
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &--concrete::before {
+    background-image: url("../img/delivery-concrete.png");
+  }
+
+  &--recycling::before {
+    background-image: url("../img/delivery-recycling.png");
+  }
+
+  &--formwork::before {
+    background-image: url("../img/delivery-formwork.png");
+  }
+
+  &--panels::before {
+    background-image: url("../img/delivery-panels.png");
+  }
+
+  &--fasades::before {
+    background-image: url("../img/delivery-fasades.png");
+  }
+
+  &--finishing::before {
+    background-image: url("../img/delivery-finishing.png");
+  }
+
+  &--scaffolding::before {
+    background-image: url("../img/delivery-scaffolding.png");
+  }
+
+  &--equipment::before {
+    background-image: url("../img/delivery-equipment.png");
+  }
+
+  &--electrical::before {
+    background-image: url("../img/delivery-electronic.png");
+  }
+
+}
+
+.delivery-type__heading {
+  margin: 0;
+  margin-bottom: 11px;
+  color: $color-heading;
+  font-size: 18px;
+}
+
+.delivery-type__description {
+  margin: 0;
+}

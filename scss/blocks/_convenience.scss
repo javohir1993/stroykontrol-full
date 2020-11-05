@@ -1,0 +1,36 @@
+.convenience {
+   &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 7px;
+    margin-right: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+   }
+
+   &--visible {
+     max-width: 470px;
+   }
+
+   &--international-lang {
+     max-width: 570px;
+   }
+
+   &--adaptable {
+     max-width: 590px;
+   }
+}
+
+.convenience__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.convenience__text {
+  margin: 0;
+  opacity: 0.75;
+}
