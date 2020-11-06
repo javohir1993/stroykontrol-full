@@ -56,3 +56,39 @@
     margin-right: 41px;
   }
 }
+
+
+@include breakpoint-down (1100) {
+  .hero__list {
+    justify-content: center;
+  }
+
+  .hero__item {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@include breakpoint-down (1000) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+@include breakpoint-down (768) {
+  .hero__heading {
+    font-size: 40px;
+  }
+}
+
+@include breakpoint-down (600) {
+  .hero__heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .hero__img {
+    margin-bottom: 80px;
+  }
+}

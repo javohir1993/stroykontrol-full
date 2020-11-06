@@ -1,0 +1,131 @@
+.advantage {
+  &::before {
+    flex-shrink: 0;
+    content: "";
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &--software {
+    max-width: 460px;
+
+    &::before {
+      background-image: url("../img/advantage-software@2x.png");
+    }
+  }
+
+  &--potential {
+    max-width: 420px;
+
+    &::before {
+      background-image: url("../img/advantage-potential@2x.png");
+    }
+  }
+
+  &--leader {
+    max-width: 440px;
+
+    &::before {
+      background-image: url("../img/advantage-leader@2x.png");
+    }
+  }
+
+  &--security {
+    max-width: 460px;
+
+    &::before {
+      background-image: url("../img/advantage-security@2x.png");
+    }
+  }
+}
+
+.advantage__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-heading;
+}
+
+.advantage__text {
+  margin: 0;
+}
+
+
+@include breakpoint-down (1200) {
+  .advantage {
+    &::before {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include breakpoint-down (1000) {
+  .advantage {
+
+    &--software {
+      max-width: 400px;
+    }
+
+    &--potential {
+      max-width: 400px;
+    }
+
+    &--leader {
+      max-width: 400px;
+    }
+
+    &--security {
+      max-width: 400px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@include breakpoint-down (900) {
+  .advantage {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+@include retina-bg {
+
+  &--software {
+
+    &::before {
+      background-image: url("../img/advantage-software@2x.png");
+    }
+
+
+    &--potential {
+      &::before {
+        background-image: url("../img/advantage-potential@2x.png");
+      }
+    }
+
+    &--leader {
+      &::before {
+        background-image: url("../img/advantage-leader@2x.png");
+      }
+    }
+
+    &--security {
+      &::before {
+        background-image: url("../img/advantage-security@2x.png");
+      }
+    }
+  }
+}
