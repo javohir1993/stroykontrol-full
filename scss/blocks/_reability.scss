@@ -177,3 +177,13 @@
     padding: 20px;
   }
 }
+
+
+
+@include retina-bg {
+  .reability__bottom-text {
+    &::before {
+      background-image: url("../img/reability-button-bg@2x.png");
+    }
+  }
+}

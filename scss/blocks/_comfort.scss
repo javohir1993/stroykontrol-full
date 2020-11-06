@@ -35,3 +35,21 @@
 .comfort__text {
   margin: 0;
 }
+
+
+@include retina-bg {
+  .comfort {
+
+    &--fresh-air::before {
+      background-image: url("../img/comfort-fresh-air@2x.png");
+    }
+
+    &--waste-management::before {
+      background-image: url("../img/comfort-waste-management@2x.png");
+    }
+
+    &--improved-society::before {
+      background-image: url("../img/comfort-improve-society@2x.png");
+    }
+  }
+}

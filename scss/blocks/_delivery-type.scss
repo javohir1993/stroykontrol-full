@@ -59,3 +59,46 @@
 .delivery-type__description {
   margin: 0;
 }
+
+
+@include retina-bg {
+  .delivery-type {
+
+    &--concrete::before {
+      background-image: url("../img/delivery-concrete@2x.png");
+    }
+
+    &--recycling::before {
+      background-image: url("../img/delivery-recycling@2x.png");
+    }
+
+    &--formwork::before {
+      background-image: url("../img/delivery-formwork@2x.png");
+    }
+
+    &--panels::before {
+      background-image: url("../img/delivery-panels@2x.png");
+    }
+
+    &--fasades::before {
+      background-image: url("../img/delivery-fasades@2x.png");
+    }
+
+    &--finishing::before {
+      background-image: url("../img/delivery-finishing@2x.png");
+    }
+
+    &--scaffolding::before {
+      background-image: url("../img/delivery-scaffolding@2x.png");
+    }
+
+    &--equipment::before {
+      background-image: url("../img/delivery-equipment@2x.png");
+    }
+
+    &--electrical::before {
+      background-image: url("../img/delivery-electronic@2x.png");
+    }
+
+  }
+}

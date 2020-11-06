@@ -14,11 +14,11 @@
   }
 
   &--key-suppliers::before {
-    background-image: url("../../img/opportunities-suppliers.png");
+    background-image: url("../img/opportunities-suppliers.png");
   }
 
   &--compliance::before {
-    background-image: url("../../img/subcontractor-compliance.png");
+    background-image: url("../img/opportunities-compliance.png");
   }
 }
 
@@ -32,4 +32,22 @@
 .opportunities__text {
   margin: 0;
   opacity: 0.75;
+}
+
+
+
+@include retina-bg {
+  .opportunities {
+    &--subcontractor::before {
+      background-image: url("../img/opportunities-subcontractor@2x.png");
+    }
+
+    &--key-suppliers::before {
+      background-image: url("../img/opportunities-suppliers@2x.png");
+    }
+
+    &--compliance::before {
+      background-image: url("../img/opportunities-compliance@2x.png");
+    }
+  }
 }
