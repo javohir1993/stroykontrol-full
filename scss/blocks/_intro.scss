@@ -1,0 +1,53 @@
+.intro {
+  &::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &--efficiency::before {
+    background-image: url("../img/intro-efficiency.png");
+  }
+
+  &--loss::before {
+    background-image: url("../img/intro-loss.png");
+  }
+
+  &--safety::before {
+    background-image: url("../img/intro-safety.png");
+  }
+}
+
+.intro__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  color: $color-heading;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.intro__text {
+  margin: 0;
+}
+
+
+
+@include retina-bg {
+  .intro {
+    &--efficiency::before {
+      background-image: url("../img/intro-efficiency@2x.png");
+    }
+
+    &--loss::before {
+      background-image: url("../img/intro-loss@2x.png");
+    }
+
+    &--safety::before {
+      background-image: url("../img/intro-safety@2x.png");
+    }
+  }
+}
