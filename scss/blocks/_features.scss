@@ -118,6 +118,7 @@
   .features {
     &::before {
       background-image: url("../img/features-bg@2x.png");
+      opacity: 0.3;
     }
   }
 }
