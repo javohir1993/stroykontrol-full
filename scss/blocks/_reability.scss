@@ -4,12 +4,30 @@
 }
 
 .reability__heading {
+  max-width: 200px;
+  position: relative;
+  z-index: 1;
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 24px;
   color: $color-heading;
   font-size: 32px;
   line-height: 48px;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: -22px;
+    right: -33px;
+    width: 43px;
+    height: 41px;
+    background-image: url("../../img/leaves.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .reability__text {
