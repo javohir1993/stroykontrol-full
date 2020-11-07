@@ -1770,4 +1770,139 @@ img {
     background-image: url("../img/about-user@2x.jpg");
   }
 }
+
+.partners {
+  padding-top: 65px;
+  padding-bottom: 35px;
+}
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 675px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.partners__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.partners__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.partners__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .partners__list {
+    max-width: 400px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .partners__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .partners {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .partners__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.partner::before {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  content: "";
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.partner--machines {
+  width: 126px;
+}
+
+.partner--machines::before {
+  height: 112px;
+  background-image: url("../../img/partners-machines.png");
+}
+
+.partner--contechec {
+  width: 164px;
+}
+
+.partner--contechec::before {
+  height: 88px;
+  background-image: url("../../img/partners-contechmap.png");
+}
+
+.partner--contechglobal {
+  width: 162px;
+}
+
+.partner--contechglobal::before {
+  height: 110px;
+  background-image: url("../../img/partners-contechstartup.png");
+}
+
+.partner--proptech {
+  width: 184px;
+}
+
+.partner--proptech::before {
+  height: 112px;
+  background-image: url("../../img/partners-proptech.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .partner--machines::before {
+    background-image: url("../../img/partners-machines@2x.png");
+  }
+  .partner--contechec::before {
+    background-image: url("../../img/partners-contechmap@2x.png");
+  }
+  .partner--contechglobal::before {
+    background-image: url("../../img/partners-contechstartup@2x.png");
+  }
+  .partner--proptech::before {
+    background-image: url("../../img/partners-proptech@2x.png");
+  }
+}
 /*# sourceMappingURL=styles.css.map */

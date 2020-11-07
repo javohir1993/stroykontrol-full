@@ -1,0 +1,77 @@
+.partner {
+  &::before {
+    flex-grow: 1;
+    content: "";
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
+
+  &--machines {
+    width: 126px;
+
+    &::before {
+      height: 112px;
+      background-image: url("../../img/partners-machines.png");
+    }
+  }
+
+  &--contechec {
+    width: 164px;
+
+    &::before {
+      height: 88px;
+      background-image: url("../../img/partners-contechmap.png");
+    }
+  }
+
+  &--contechglobal {
+    width: 162px;
+
+    &::before {
+      height: 110px;
+      background-image: url("../../img/partners-contechstartup.png");
+    }
+  }
+
+
+  &--proptech {
+    width: 184px;
+
+    &::before {
+      height: 112px;
+      background-image: url("../../img/partners-proptech.png");
+    }
+  }
+}
+
+
+@include retina-bg {
+  .partner {
+    &--machines {
+      &::before {
+        background-image: url("../../img/partners-machines@2x.png");
+      }
+    }
+
+    &--contechec {
+      &::before {
+        background-image: url("../../img/partners-contechmap@2x.png");
+      }
+    }
+
+    &--contechglobal {
+      &::before {
+        background-image: url("../../img/partners-contechstartup@2x.png");
+      }
+    }
+
+
+    &--proptech {
+      &::before {
+        background-image: url("../../img/partners-proptech@2x.png");
+      }
+    }
+  }
+}
