@@ -585,6 +585,12 @@ img {
   }
 }
 
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .hero {
   padding-top: 74px;
   padding-bottom: 70px;
@@ -748,10 +754,88 @@ img {
   }
 }
 
-.main-content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.construction {
+  padding-top: 70px;
+  padding-bottom: 85px;
+}
+
+.construction__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #212B31;
+  text-align: center;
+}
+
+.construction__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1015px;
+  margin-top: 0;
+  margin-bottom: 144px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.construction__text::after {
+  content: "";
+  width: 100%;
+  height: 304px;
+  margin-top: 40px;
+  background-image: url("../img/construction-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.construction__description {
+  max-width: 780px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 32px;
+  line-height: 48px;
+  color: #212B31;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .construction {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .construction__text {
+    margin-bottom: 50px;
+  }
+  .construction__text::after {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .construction__description {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .construction__text::after {
+    background-image: url("../img/construction-bg@2x.png");
+  }
 }
 
 .delivery {
@@ -765,6 +849,7 @@ img {
   color: #212B31;
   font-size: 32px;
   line-height: 48px;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -927,6 +1012,7 @@ img {
   margin-bottom: 11px;
   color: #212B31;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .delivery-type__description {
@@ -979,6 +1065,7 @@ img {
   color: #212B31;
   font-size: 32px;
   line-height: 48px;
+  font-weight: normal;
   text-align: center;
 }
 
