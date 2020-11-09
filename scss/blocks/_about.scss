@@ -68,7 +68,7 @@
   }
 }
 
-@include breakpoint-down (1000) {
+@include breakpoint-down (1100) {
   .about__info {
     flex-wrap: wrap;
   }
