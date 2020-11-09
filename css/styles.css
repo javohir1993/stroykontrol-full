@@ -996,6 +996,162 @@ img {
   }
 }
 
+.what-is {
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.what-is__heading {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #212B31;
+  text-align: center;
+}
+
+.what-is__text {
+  max-width: 830px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.what-is__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.what-is__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.what-is__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.what-is__item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 650px) {
+  .what-is__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .what-is__item:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.what::after {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  content: "";
+  height: 272px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.what--gps::after {
+  width: 402px;
+  background-image: url("../img/gps-bg.png");
+}
+
+.what--optimisation::after {
+  width: 358px;
+  background-image: url("../img/optimisation-bg.png");
+}
+
+.what--real-time::after {
+  width: 416px;
+  background-image: url("../img/real-time-bg.png");
+}
+
+.what__info {
+  max-width: 560px;
+}
+
+.what__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+}
+
+.what__text {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .what__info {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .what::after {
+    height: 172px;
+  }
+  .what--gps::after {
+    width: 300px;
+  }
+  .what--optimisation::after {
+    width: 258px;
+  }
+  .what--real-time::after {
+    width: 316px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .what::after {
+    margin-bottom: 20px;
+  }
+  .what__info {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .what--gps::before {
+    background-image: url("../img/gps-bg@2x.png");
+  }
+  .what--optimisation {
+    background-image: url("../img/optimisation-bg@2x.png");
+  }
+  .what--real-time {
+    background-image: url("../img/real-time-bg@2x.png");
+  }
+}
+
 .delivery {
   padding-top: 72px;
   padding-bottom: 62px;

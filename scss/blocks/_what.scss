@@ -1,0 +1,104 @@
+.what {
+  &::after {
+    flex-shrink: 0;
+    content: "";
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &--gps::after {
+    width: 402px;
+    background-image: url("../img/gps-bg.png");
+  }
+
+  &--optimisation::after {
+    width: 358px;
+    background-image: url("../img/optimisation-bg.png");
+  }
+
+  &--real-time::after {
+    width: 416px;
+    background-image: url("../img/real-time-bg.png");
+  }
+}
+
+.what__info {
+  max-width: 560px;
+}
+
+.what__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-heading;
+}
+
+.what__text {
+  margin: 0;
+}
+
+
+@include breakpoint-down (1000) {
+  .what__info {
+    max-width: 500px;
+  }
+}
+
+@include breakpoint-down (850) {
+  .what {
+    &::after {
+      height: 172px;
+    }
+
+    &--gps::after {
+      width: 300px;
+    }
+
+    &--optimisation::after {
+      width: 258px;
+    }
+
+    &--real-time::after {
+      width: 316px;
+    }
+  }
+}
+
+@include breakpoint-down (650) {
+  .what {
+    &::after {
+      margin-bottom: 20px;
+    }
+  }
+
+  .what__info {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+@include retina-bg {
+  .what {
+    &--gps::before {
+      background-image: url("../img/gps-bg@2x.png");
+    }
+
+    &--optimisation {
+      background-image: url("../img/optimisation-bg@2x.png");
+    }
+
+    &--real-time {
+      background-image: url("../img/real-time-bg@2x.png");
+    }
+  }
+}
