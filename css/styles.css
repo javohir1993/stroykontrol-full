@@ -1141,13 +1141,13 @@ img {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .what--gps::before {
+  .what--gps::after {
     background-image: url("../img/gps-bg@2x.png");
   }
-  .what--optimisation {
+  .what--optimisation::after {
     background-image: url("../img/optimisation-bg@2x.png");
   }
-  .what--real-time {
+  .what--real-time::after {
     background-image: url("../img/real-time-bg@2x.png");
   }
 }

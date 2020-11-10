@@ -89,15 +89,15 @@
 
 @include retina-bg {
   .what {
-    &--gps::before {
+    &--gps::after {
       background-image: url("../img/gps-bg@2x.png");
     }
 
-    &--optimisation {
+    &--optimisation::after {
       background-image: url("../img/optimisation-bg@2x.png");
     }
 
-    &--real-time {
+    &--real-time::after {
       background-image: url("../img/real-time-bg@2x.png");
     }
   }
