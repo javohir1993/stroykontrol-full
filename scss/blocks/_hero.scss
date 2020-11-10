@@ -92,3 +92,17 @@
     margin-bottom: 80px;
   }
 }
+
+@include breakpoint-down (400) {
+  .hero__buttons-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__button {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

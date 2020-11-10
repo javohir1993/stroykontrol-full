@@ -113,6 +113,13 @@
   }
 }
 
+@include breakpoint-down (400) {
+  .features__button-white {
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+}
+
 
 @include retina-bg {
   .features {
