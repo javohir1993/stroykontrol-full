@@ -2527,4 +2527,44 @@ img {
     background-image: url("../../img/partners-proptech@2x.png");
   }
 }
+
+.cta {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  background-image: url("../../img/cta-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 466px;
+  background-position: center center;
+}
+
+.cta__container {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.cta__question {
+  margin: 0;
+  margin-bottom: 54px;
+  font-size: 48px;
+  line-height: 64px;
+  color: #212B31;
+  text-align: center;
+}
+
+.cta__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta__button {
+  text-decoration: none;
+}
+
+.cta__button:not(:last-child) {
+  margin-right: 16px;
+}
 /*# sourceMappingURL=styles.css.map */
